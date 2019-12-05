@@ -10,7 +10,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('http://santa-shares.azurewebsites.net/api/users')
+    fetch('https://santa-shares.azurewebsites.net/api/users')
     .then(res => res.json())
     .then(data => {
       data.sort(function(a, b) { return a.balance - b.balance; })
@@ -19,7 +19,7 @@ class App extends Component {
     .catch(console.log)
   }
 
-  render () {
+  render () {y
     return (
       <div>
         <NavBar />
