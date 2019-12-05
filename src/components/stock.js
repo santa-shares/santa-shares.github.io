@@ -9,8 +9,8 @@ const Stock = ({ items }) => {
                     <tr>
                         <th scope="col">ID</th>
                         <th scope="col">Name</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Amount</th>
+                        <th style={{textAlign: 'center'}} scope="col">Price</th>
+                        <th style={{textAlign: 'center'}} scope="col">Amount</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -18,8 +18,8 @@ const Stock = ({ items }) => {
                    <tr>
                        <td>{item.item_id}</td>
                        <td>{item.item_name}</td>
-                       <td>£{item.price}</td>
-                       <td>£{item.amount}</td>
+                       <td style={{textAlign: 'center'}}>{"£"+((item.price/100).toFixed(2))}</td>
+                       <td style={{textAlign: 'center'}}>{item.amount}</td>
                    </tr>
                ))} 
                </tbody>

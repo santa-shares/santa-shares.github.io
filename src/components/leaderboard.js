@@ -9,7 +9,7 @@ const Leaderboard = ({ users }) => {
                     <tr>
                         <th scope="col">ID</th>
                         <th scope="col">Name</th>
-                        <th scope="col">Cash</th>
+                        <th style={{textAlign: 'center'}} scope="col">Cash</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -17,7 +17,7 @@ const Leaderboard = ({ users }) => {
                    <tr>
                        <td>{user.user_id}</td>
                        <td>{user.user_name}</td>
-                       <td>£{user.balance}</td>
+                       <td style={{textAlign: 'center'}}>{"£"+((user.balance/100).toFixed(2))}</td>
                    </tr>
                ))} 
                </tbody>
