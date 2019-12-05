@@ -19,7 +19,7 @@ class App extends Component {
     .catch(console.log)
   }
 
-  render () {y
+  render () {
     return (
       <div>
         <NavBar />
